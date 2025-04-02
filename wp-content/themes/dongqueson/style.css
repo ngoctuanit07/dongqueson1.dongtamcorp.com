@@ -1,0 +1,541 @@
+/*
+ Theme Name:   DongQueSon
+ Theme URI:    https://nguyenngoctuan07.com/dongqueson-theme/
+ Author:       Tuan Nguyen
+ Author URI:   https://nguyenngoctuan07.com/
+ Description:  A simple WordPress theme built with Bootstrap.
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  dongqueson
+ Tags:         bootstrap, responsive, clean
+*/
+
+/* Top Bar Styles */
+.top-bar {
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-bar-links a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.top-bar-links a:hover {
+    color: #158848;
+}
+
+.top-bar .bi {
+    margin-right: 5px;
+}
+
+.top-bar img {
+    width: 16px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+/* Navbar Styles */
+.navbar-brand span {
+    color: #158848;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: #158848 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e65b00 !important;
+}
+
+/* Highlight Section */
+.highlight-section {
+    background-color:rgba(241,90,35,0.047);
+}
+
+.cta-box {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.cta-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.btn-orange {
+    background-color: #158848;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn-orange:hover {
+    background-color: #e65b00;
+    color: #fff;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+.info-box i {
+    color: #158848;
+}
+
+.info-box h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Support Buttons */
+.fixed-bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.phone-btn {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 24px;
+}
+
+.zalo-btn {
+    background-color: #0068ff;
+}
+
+.zalo-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #fff;
+}
+
+.services-tabs .nav-tabs {
+    border-bottom: none;
+}
+
+.services-tabs .nav-link {
+    color: #158848;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.services-tabs .nav-link.active {
+    background-color: #158848;
+    color: #fff;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    padding: 15px;
+}
+
+.service-card .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.service-card .card-text {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Doctors Section */
+.doctors-section {
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #158848;
+}
+
+.doctors-tabs .nav-tabs {
+    border-bottom: none;
+}
+
+.doctors-tabs .nav-link {
+    color: #158848;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.doctors-tabs .nav-link.active {
+    background-color: #158848;
+    color: #fff;
+}
+
+.doctor-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.doctor-card .card-body {
+    padding: 15px;
+}
+
+.doctor-card .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.doctor-card .card-text {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-icons a {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.contact-icons .text-success {
+    color: #28a745 !important;
+}
+
+.contact-icons .text-primary {
+    color: #007bff !important;
+}
+
+/* Messages Section */
+.messages-section {
+    background-color: #158848;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.messages-section p {
+    font-size: 16px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ff6200" fill-opacity="0.1" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,117.3C672,96,768,96,864,96C960,96,1056,96,1152,106.7C1248,117,1344,139,1392,149.3L1440,160V320H1392H1344H1248H1152H1056H960H864H768H672H576H480H384H288H192H96H48H0Z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.message-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><circle cx="25" cy="25" r="10" fill="%23ff6200" opacity="0.2"/><path d="M10 25 L40 25" stroke="%23ff6200" stroke-width="2" opacity="0.2"/><path d="M25 10 L25 40" stroke="%23ff6200" stroke-width="2" opacity="0.2"/></svg>');
+    background-size: 50px;
+    opacity: 0.1;
+}
+
+.message-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.message-card .card-body {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.message-card .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #158848;
+}
+
+/* News Section */
+.news-card {
+    border: 2px solid #158848;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.news-card .card-body {
+    padding: 10px;
+    background-color: #fff;
+}
+.news-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+.news-card .card-text {
+    font-size: 0.85rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.news-meta {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 0;
+}
+.nav-tabs .nav-link {
+    color: #333;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 5px 15px;
+}
+.nav-tabs .nav-link.active {
+    color: #158848;
+    border-bottom: 2px solid #158848;
+    background: none;
+}
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #158848;
+    cursor: pointer;
+}
+.badge-custom {
+    background-color: #158848;
+    color: white;
+    border-radius: 15px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+}
+
+.footer-section {
+    background-color: #158848;
+    padding: 20px 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+.footer-contact, .footer-activity, .footer-map {
+    padding: 0 15px;
+}
+.footer-contact h5, .footer-activity h5, .footer-map h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.footer-contact p, .footer-activity p, .footer-map p, .footer-bottom p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+.footer-contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+.footer-map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.social-icons a {
+    color: #fff;
+    background-color: #158848;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.social-icons a.facebook { background-color: #3b5998; }
+.social-icons a.messenger { background-color: #00b4d8; }
+.social-icons a.youtube { background-color: #ff0000; }
+.footer-bottom {
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.tintuc, ul {
+    margin: 0;
+    padding: 0;
+}
+.tintuc li, ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+.tintuc a {
+    color: #000; /* Màu xanh dương đậm, phù hợp với bối cảnh y tế */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 1rem;
+   
+    transition: color 0.2s ease;
+}
+.tintuc a:hover {
+    color: #003087; /* Màu xanh đậm hơn khi hover */
+}
+/* ul .text-muted {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 5px;
+} */
+
+/* Section Gói Dịch Vụ */
+.service-packages {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+}
+
+.section-title {
+    color: #000; /* Màu cam giống trong hình */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.service-card .btn-primary {
+    background-color: #ff5733; /* Màu cam giống trong hình */
+    border-color: #ff5733;
+    font-size: 0.9rem;
+}
+
+.service-card .btn-primary:hover {
+    background-color: #e04e2d;
+    border-color: #e04e2d;
+}
