@@ -3,7 +3,7 @@
 Plugin Name: Quản Lý Dịch Vụ
 Description: Plugin giúp lưu trữ và hiển thị các dịch vụ chăm sóc mẹ và bé sau sinh.
 Version: 1.0
-Author: Bạn
+Author: Tuan Nguyen
 */
 
 if (!defined('ABSPATH')) exit;
