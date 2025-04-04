@@ -91,8 +91,8 @@ define('JWT_AUTH_SECRET_KEY', 'tuananh');
 define('JWT_AUTH_CORS_ENABLE', true);
 
 define( 'FS_METHOD', 'direct' );
-define( 'WP_DEBUG_DISPLAY', true );
-define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+define( 'WP_DEBUG_LOG', false );
 define( 'CONCATENATE_SCRIPTS', false );
 define( 'AUTOSAVE_INTERVAL', 600 );
 define( 'WP_POST_REVISIONS', 5 );
