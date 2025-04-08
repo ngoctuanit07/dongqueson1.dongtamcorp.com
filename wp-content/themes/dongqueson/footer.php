@@ -7,7 +7,7 @@
                     <img src="https://via.placeholder.com/80x80?text=Logo" alt="Bệnh viện Logo" class="footer-logo">
                     <h5>Liên hệ</h5>
                     <p>Địa chỉ: QL1A, Thôn Hương Quế Đông, Quế Phú, Quế Sơn, Quảng Nam</p>
-                    <p>Điện thoại: 0235 3655 666</p>
+                    <p>Điện thoại: 0235 3 655 666</p>
                 </div>
                 <!-- Hoạt động -->
                 <div class="col-md-4 footer-activity">

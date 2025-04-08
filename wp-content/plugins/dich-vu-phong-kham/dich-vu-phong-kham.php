@@ -40,6 +40,28 @@ function dich_vu_phong_kham_activate() {
     dbDelta( $sql );
 }
 
+// Xóa bảng khi plugin bị deactivate
+register_deactivation_hook( __FILE__, 'dich_vu_phong_kham_deactivate' );
+
+function dich_vu_phong_kham_deactivate() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'dich_vu_phong_kham';
+
+    // Xóa bảng
+    $wpdb->query( "DROP TABLE IF EXISTS $table_name" );
+}
+
+// Xóa bảng khi plugin bị uninstall
+register_uninstall_hook( __FILE__, 'dich_vu_phong_kham_uninstall' );
+
+function dich_vu_phong_kham_uninstall() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'dich_vu_phong_kham';
+
+    // Xóa bảng
+    $wpdb->query( "DROP TABLE IF EXISTS $table_name" );
+}
+
 // Hook vào admin_menu để thêm menu quản trị
 add_action( 'admin_menu', 'dich_vu_phong_kham_admin_menu' );
 
