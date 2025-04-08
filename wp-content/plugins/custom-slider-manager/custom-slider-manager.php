@@ -258,7 +258,7 @@ function csm_custom_styles() {
             align-items: center; /* Căn giữa theo chiều dọc */
         }
         .owl-carousel .item img.slider-image {
-            width: 68%; /* Giữ nguyên như bạn đã đặt */
+            width: 100%; /* Giữ nguyên như bạn đã đặt */
             height: 100%; /* Chiều cao bằng container */
             object-fit: cover; /* Đảm bảo ảnh được cắt để lấp đầy khung */
             display: block;
