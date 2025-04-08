@@ -203,4 +203,50 @@ function doctor_admin_page() {
     </div>
     <?php
 }
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+    wp_enqueue_script('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', [], null, true);
+});
+
+// Shortcode: [doctor_list]
+add_shortcode('doctor_list', 'doctor_list_shortcode_display');
+
+function doctor_list_shortcode_display() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'doctors';
+    $doctors = $wpdb->get_results("SELECT * FROM $table_name ORDER BY full_name ASC");
+
+    if (empty($doctors)) {
+        return '<p>Không có bác sĩ nào được tìm thấy.</p>';
+    }
+
+    ob_start();
+    ?>
+    <section class="container py-5">
+    <h2 class="section-title text-center mb-4">Đội ngũ bác sĩ</h2>
+        <div class="row g-4">
+            <?php foreach ($doctors as $doctor): ?>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm rounded-4 text-center border-0">
+                        <img src="<?php echo esc_url($doctor->avatar_url ?: 'https://dongqueson1.dongtamcorp.com/wp-content/uploads/2025/04/avatar-default-png.webp'); ?>"
+                             class="card-img-top rounded-top-4" alt="<?php echo esc_attr($doctor->full_name); ?>"
+                             style="object-fit: cover; height: 320px;">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-danger mb-1">
+                                <?php echo esc_html($doctor->doctor_title); ?><br><?php echo esc_html($doctor->full_name); ?>
+                            </h5>
+                            <p class="mb-1 small"><?php echo esc_html($doctor->position); ?></p>
+                            <p class="text-muted small">Chuyên khoa: <?php echo esc_html($doctor->specialty); ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+    <?php
+    return ob_get_clean();
+}
+
 ?>
+
