@@ -468,78 +468,132 @@ add_shortcode('dich_vu_phong_kham', 'dich_vu_phong_kham_shortcode_display');
 
 function dich_vu_phong_kham_shortcode_display() {
     global $wpdb;
-    $table_name = $wpdb->prefix . 'dich_vu_phong_kham';
-    $services = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC", ARRAY_A);
 
-    if (empty($services)) {
+    // Số lượng dịch vụ hiển thị trên mỗi trang
+    $services_per_page = 8;
+
+    // Lấy danh sách chuyên khoa (các tab)
+    $table_name = $wpdb->prefix . 'dich_vu_phong_kham';
+    $specialties = $wpdb->get_col("SELECT DISTINCT specialty FROM $table_name");
+
+    if (empty($specialties)) {
         return '<p>Không có dịch vụ nào được tìm thấy.</p>';
     }
 
-    // Nhóm theo chuyên khoa
-    $grouped = [
-        'Tất cả' => $services,
-        'Xét nghiệm' => [],
-        'Y học cổ truyền' => [],
-        'Khám tổng quát' => [],
-    ];
+    // Lấy chuyên khoa hiện tại từ query string, mặc định là chuyên khoa đầu tiên
+    $current_specialty = isset($_GET['specialty']) ? sanitize_text_field($_GET['specialty']) : $specialties[0];
 
-    foreach ($services as $service) {
-        if (isset($grouped[$service['specialty']])) {
-            $grouped[$service['specialty']][] = $service;
-        }
-    }
+    // Lấy số trang hiện tại từ query string, mặc định là 1
+    $current_page = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : 1;
+
+    // Tính toán OFFSET
+    $offset = ($current_page - 1) * $services_per_page;
+
+    // Lấy tổng số dịch vụ cho chuyên khoa hiện tại
+    $total_services = $wpdb->get_var(
+        $wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE specialty = %s", $current_specialty)
+    );
+    $total_pages = ceil($total_services / $services_per_page);
+
+    // Lấy danh sách dịch vụ cho chuyên khoa hiện tại
+    $services = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT * FROM $table_name WHERE specialty = %s ORDER BY created_at DESC LIMIT %d OFFSET %d",
+            $current_specialty,
+            $services_per_page,
+            $offset
+        ),
+        ARRAY_A
+    );
 
     ob_start();
     ?>
 
     <div class="container my-5">
-    <h2 class="section-title text-start mb-4">Gói dịch vụ</h2>
+        <h2 class="section-title text-start mb-4">Gói dịch vụ</h2>
 
         <!-- Tabs -->
-        <ul class="nav nav-pills mb-4" id="serviceTabs">
-            <?php
-            $first = true;
-            foreach ($grouped as $key => $items) {
-                $id = sanitize_title($key);
-                echo '<li class="nav-item me-2">';
-                echo '<button class="nav-link' . ($first ? ' active' : '') . '" data-bs-toggle="pill" data-bs-target="#tab-' . $id . '">' . esc_html($key) . '</button>';
-                echo '</li>';
-                $first = false;
-            }
-            ?>
+        <ul class="nav nav-tabs" id="serviceTabs" role="tablist">
+            <?php foreach ($specialties as $index => $specialty): ?>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link <?php echo $specialty === $current_specialty ? 'active' : ''; ?>" id="tab-<?php echo esc_attr($specialty); ?>" href="?specialty=<?php echo urlencode($specialty); ?>" role="tab">
+                        <?php echo esc_html($specialty); ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
         </ul>
 
-        <!-- Tab contents -->
-        <div class="tab-content">
-            <?php
-            $first = true;
-            foreach ($grouped as $key => $services) {
-                $id = sanitize_title($key);
-                echo '<div class="tab-pane fade' . ($first ? ' show active' : '') . '" id="tab-' . $id . '">';
-                echo '<div class="row g-4">';
-                foreach ($services as $sv) {
-                    ?>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://demo.dongtamcorp.com/wp-content/uploads/2024/12/logo-dong-tam-corp-2024-02-800x800.png" class="card-img-top" alt="<?php echo esc_attr($sv['name']); ?>">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo esc_html($sv['name']); ?></h5>
-                                <p class="text-danger fw-bold">Liên hệ báo giá</p>
-                                <p class="small">Chuyên khoa: <?php echo esc_html($sv['specialty']); ?></p>
+        <!-- Tab Content -->
+        <div class="tab-content" id="serviceTabsContent">
+            <div class="tab-pane fade show active" id="content-<?php echo esc_attr($current_specialty); ?>" role="tabpanel">
+                <div class="row g-4 mt-4">
+                    <?php if (!empty($services)): ?>
+                        <?php foreach ($services as $sv): ?>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="https://demo.dongtamcorp.com/wp-content/uploads/2024/12/logo-dong-tam-corp-2024-02-800x800.png" class="card-img-top" alt="<?php echo esc_attr($sv['name']); ?>">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo esc_html($sv['name']); ?></h5>
+                                        <p class="text-danger fw-bold">Liên hệ báo giá</p>
+                                        <p class="small">Chuyên khoa: <?php echo esc_html($sv['specialty']); ?></p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        <a href="tel:<?php echo esc_attr($sv['phone']); ?>" class="btn btn-danger w-100">📞 Gọi <?php echo esc_html($sv['phone']); ?></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                <a href="tel:<?php echo esc_attr($sv['phone']); ?>" class="btn btn-danger w-100">📞 Gọi <?php echo esc_html($sv['phone']); ?></a>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-                }
-                echo '</div></div>';
-                $first = false;
-            }
-            ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>Không có dịch vụ nào trong chuyên khoa này.</p>
+                    <?php endif; ?>
+                </div>
+
+                <!-- Phân trang -->
+                <?php if ($total_pages > 1): ?>
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <?php if ($current_page > 1): ?>
+                                <li class="page-item">
+                                    <a class="page-link" href="?specialty=<?php echo urlencode($current_specialty); ?>&paged=<?php echo $current_page - 1; ?>" aria-label="Trang trước">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+
+                            <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                                <li class="page-item <?php echo ($i === $current_page) ? 'active' : ''; ?>">
+                                    <a class="page-link" href="?specialty=<?php echo urlencode($current_specialty); ?>&paged=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                </li>
+                            <?php endfor; ?>
+
+                            <?php if ($current_page < $total_pages): ?>
+                                <li class="page-item">
+                                    <a class="page-link" href="?specialty=<?php echo urlencode($current_specialty); ?>&paged=<?php echo $current_page + 1; ?>" aria-label="Trang sau">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
+                    </nav>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
+
+    <style>
+        .pagination .page-item.active .page-link {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+        }
+        .pagination .page-link {
+            color: #dc3545;
+        }
+        .pagination .page-link:hover {
+            background-color: #f8d7da;
+            color: #dc3545;
+        }
+    </style>
 
     <?php
     return ob_get_clean();
