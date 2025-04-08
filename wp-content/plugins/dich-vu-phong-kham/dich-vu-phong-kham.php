@@ -457,3 +457,90 @@ function dich_vu_phong_kham_import_page() {
     </div>
     <?php
 }
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+    wp_enqueue_script('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', [], null, true);
+});
+
+// Shortcode: [dich_vu_phong_kham]
+add_shortcode('dich_vu_phong_kham', 'dich_vu_phong_kham_shortcode_display');
+
+function dich_vu_phong_kham_shortcode_display() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'dich_vu_phong_kham';
+    $services = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC", ARRAY_A);
+
+    if (empty($services)) {
+        return '<p>Không có dịch vụ nào được tìm thấy.</p>';
+    }
+
+    // Nhóm theo chuyên khoa
+    $grouped = [
+        'Tất cả' => $services,
+        'Xét nghiệm' => [],
+        'Y học cổ truyền' => [],
+        'Khám tổng quát' => [],
+    ];
+
+    foreach ($services as $service) {
+        if (isset($grouped[$service['specialty']])) {
+            $grouped[$service['specialty']][] = $service;
+        }
+    }
+
+    ob_start();
+    ?>
+
+    <div class="container my-5">
+        <h2 class="fw-bold text-danger mb-4">Gói dịch vụ</h2>
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills mb-4" id="serviceTabs">
+            <?php
+            $first = true;
+            foreach ($grouped as $key => $items) {
+                $id = sanitize_title($key);
+                echo '<li class="nav-item me-2">';
+                echo '<button class="nav-link' . ($first ? ' active' : '') . '" data-bs-toggle="pill" data-bs-target="#tab-' . $id . '">' . esc_html($key) . '</button>';
+                echo '</li>';
+                $first = false;
+            }
+            ?>
+        </ul>
+
+        <!-- Tab contents -->
+        <div class="tab-content">
+            <?php
+            $first = true;
+            foreach ($grouped as $key => $services) {
+                $id = sanitize_title($key);
+                echo '<div class="tab-pane fade' . ($first ? ' show active' : '') . '" id="tab-' . $id . '">';
+                echo '<div class="row g-4">';
+                foreach ($services as $sv) {
+                    ?>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://demo.dongtamcorp.com/wp-content/uploads/2024/12/logo-dong-tam-corp-2024-02-800x800.png" class="card-img-top" alt="<?php echo esc_attr($sv['name']); ?>">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo esc_html($sv['name']); ?></h5>
+                                <p class="text-danger fw-bold">Liên hệ báo giá</p>
+                                <p class="small">Chuyên khoa: <?php echo esc_html($sv['specialty']); ?></p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <a href="tel:<?php echo esc_attr($sv['phone']); ?>" class="btn btn-danger w-100">📞 Gọi <?php echo esc_html($sv['phone']); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                }
+                echo '</div></div>';
+                $first = false;
+            }
+            ?>
+        </div>
+    </div>
+
+    <?php
+    return ob_get_clean();
+}

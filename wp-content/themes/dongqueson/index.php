@@ -49,12 +49,12 @@
 <section class="service-packages py-5">
     <div class="container">
         <!-- Tiêu đề -->
-        <h2 class="section-title text-start mb-4">Gói dịch vụ</h2>
+        <!-- <h2 class="section-title text-start mb-4">Gói dịch vụ</h2> -->
 
         <!-- Grid hiển thị các gói dịch vụ -->
         <div class="row">
             <!-- Sử dụng shortcode để hiển thị các gói dịch vụ -->
-            <?php echo do_shortcode('[dichvu_list]'); ?>
+            <?php echo do_shortcode('[dich_vu_phong_kham]'); ?>
         </div>
     </div>
 </section>
