@@ -11,10 +11,23 @@
  Tags:         bootstrap, responsive, clean
 */
 
-/* Top Bar Styles */
+/* ============================
+   Top Bar Styles
+============================ */
 .top-bar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaeaea;
     font-size: 14px;
-    border-bottom: 1px solid #e5e5e5;
+    color: #333;
+}
+
+.top-bar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
 }
 
 .top-bar-links a {
@@ -37,27 +50,84 @@
     vertical-align: middle;
 }
 
-/* Navbar Styles */
-.navbar-brand span {
-    color: #158848;
-    font-size: 18px;
+/* ============================
+   Navbar Styles
+============================ */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    height: auto;
 }
 
 .navbar-nav .nav-link {
-    color: #158848 !important;
+    font-size: 16px;
     font-weight: 500;
-    text-transform: uppercase;
-    padding: 10px 15px;
+    color: #333333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #e65b00 !important;
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ============================
+   Search Form Styles
+============================ */
+.search-form {
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.search-form:hover,
+.search-form:focus-within {
+    border-color: #007bff;
+}
+
+.search-input {
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    outline: none;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-icon {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #0056b3;
 }
 
 /* Highlight Section */
-.highlight-section {
+/* .highlight-section {
     background-color:rgba(241,90,35,0.047);
-}
+} */
 
 .cta-box {
     max-width: 600px;
@@ -413,129 +483,119 @@
     font-size: 0.8rem;
 }
 
+/* ============================
+   Footer Styles
+============================ */
 .footer-section {
-    background-color: #158848;
-    padding: 20px 0;
-    color: #333;
-    font-size: 0.9rem;
+    padding: 2rem 0;
+    color: #ffffff;
 }
+
+.footer-section h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
 .footer-logo {
     max-width: 80px;
-    margin-bottom: 10px;
-}
-.footer-contact, .footer-activity, .footer-map {
-    padding: 0 15px;
-}
-.footer-contact h5, .footer-activity h5, .footer-map h5 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.footer-contact p, .footer-activity p, .footer-map p, .footer-bottom p {
-    margin-bottom: 5px;
-    color: #fff;
-}
-.footer-contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-.footer-contact a:hover {
-    text-decoration: underline;
-}
-.footer-map img {
-    max-width: 100%;
     height: auto;
-    border-radius: 5px;
-}
-.social-icons a {
-    color: #fff;
-    background-color: #158848;
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 10px;
-    text-decoration: none;
-}
-.social-icons a.facebook { background-color: #3b5998; }
-.social-icons a.messenger { background-color: #00b4d8; }
-.social-icons a.youtube { background-color: #ff0000; }
-.footer-bottom {
-    font-size: 0.75rem;
-    text-align: center;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-    margin-top: 10px;
+    display: block;
+    margin-bottom: 1rem;
 }
 
-.tintuc, ul {
+/* ============================
+   General Styles
+============================ */
+ul {
     margin: 0;
     padding: 0;
-}
-.tintuc li, ul li {
-    margin-bottom: 15px;
     list-style: none;
 }
+
+ul li {
+    margin-bottom: 15px;
+}
+
 .tintuc a {
-    color: #000; /* Màu xanh dương đậm, phù hợp với bối cảnh y tế */
-    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #000;
+    text-decoration: none;
     font-size: 1rem;
-   
     transition: color 0.2s ease;
 }
+
 .tintuc a:hover {
-    color: #003087; /* Màu xanh đậm hơn khi hover */
-}
-/* ul .text-muted {
-    font-size: 0.875rem;
-    color: #6c757d;
-    margin-top: 5px;
-} */
-
-/* Section Gói Dịch Vụ */
-.service-packages {
-    background-color: #f8f9fa; /* Màu nền nhạt */
+    color: #003087;
 }
 
-.section-title {
-    color: #000; /* Màu cam giống trong hình */
-    font-size: 2rem;
-    font-weight: bold;
+/* Đảm bảo logo hiển thị đẹp và responsive */
+.custom-logo {
+    max-width: 150px; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+    display: block; /* Đảm bảo logo không bị inline */
+    margin: 0 auto; /* Căn giữa logo */
 }
 
-.service-card {
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.custom-logo-link {
+    display: inline-block; /* Đảm bảo liên kết logo không bị ảnh hưởng */
+    max-width: 150px; /* Giới hạn chiều rộng tối đa của liên kết */
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
+.footer-logo {
+    max-width: 80px; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    display: block; /* Đảm bảo logo không bị inline */
+    margin-bottom: 1rem; /* Khoảng cách dưới logo */
 }
 
-.service-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+/* ============================
+   Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
 
-.service-card .card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-}
+    .search-form {
+        margin-top: 1rem;
+        max-width: 100%;
+    }
 
-.service-card .btn-primary {
-    background-color: #ff5733; /* Màu cam giống trong hình */
-    border-color: #ff5733;
-    font-size: 0.9rem;
-}
+    .footer-section .footer-contact,
+    .footer-section .footer-activity,
+    .footer-section .footer-map {
+        margin-bottom: 20px;
+    }
 
-.service-card .btn-primary:hover {
-    background-color: #e04e2d;
-    border-color: #e04e2d;
+    .footer-section .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+.footer-section .text-dark {
+    color: #fff !important;
 }

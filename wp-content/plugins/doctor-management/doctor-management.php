@@ -214,8 +214,29 @@ add_shortcode('doctor_list', 'doctor_list_shortcode_display');
 
 function doctor_list_shortcode_display() {
     global $wpdb;
+
+    // Số lượng bác sĩ hiển thị trên mỗi trang
+    $doctors_per_page = 35;
+
+    // Lấy số trang hiện tại từ query string, mặc định là 1
+    $current_page = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : 1;
+
+    // Tính toán OFFSET
+    $offset = ($current_page - 1) * $doctors_per_page;
+
+    // Lấy tổng số bác sĩ
     $table_name = $wpdb->prefix . 'doctors';
-    $doctors = $wpdb->get_results("SELECT * FROM $table_name ORDER BY full_name ASC");
+    $total_doctors = $wpdb->get_var("SELECT COUNT(*) FROM $table_name");
+    $total_pages = ceil($total_doctors / $doctors_per_page);
+
+    // Lấy danh sách bác sĩ với LIMIT và OFFSET
+    $doctors = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT * FROM $table_name ORDER BY full_name ASC LIMIT %d OFFSET %d",
+            $doctors_per_page,
+            $offset
+        )
+    );
 
     if (empty($doctors)) {
         return '<p>Không có bác sĩ nào được tìm thấy.</p>';
@@ -224,7 +245,7 @@ function doctor_list_shortcode_display() {
     ob_start();
     ?>
     <section class="container py-5">
-    <h2 class="section-title text-center mb-4">Đội ngũ bác sĩ</h2>
+        <h2 class="section-title text-center mb-4">Đội ngũ bác sĩ</h2>
         <div class="row g-4">
             <?php foreach ($doctors as $doctor): ?>
                 <div class="col-md-6 col-lg-3">
@@ -243,10 +264,53 @@ function doctor_list_shortcode_display() {
                 </div>
             <?php endforeach; ?>
         </div>
+
+        <!-- Phân trang -->
+        <?php if ($total_pages > 1): ?>
+            <nav class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <?php if ($current_page > 1): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="<?php echo esc_url(add_query_arg('paged', $current_page - 1)); ?>" aria-label="Trang trước">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+
+                    <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                        <li class="page-item <?php echo ($i === $current_page) ? 'active' : ''; ?>">
+                            <a class="page-link" href="<?php echo esc_url(add_query_arg('paged', $i)); ?>"><?php echo $i; ?></a>
+                        </li>
+                    <?php endfor; ?>
+
+                    <?php if ($current_page < $total_pages): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="<?php echo esc_url(add_query_arg('paged', $current_page + 1)); ?>" aria-label="Trang sau">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
+        <?php endif; ?>
     </section>
+
+    <style>
+        .pagination .page-item.active .page-link {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+        }
+        .pagination .page-link {
+            color: #dc3545;
+        }
+        .pagination .page-link:hover {
+            background-color: #f8d7da;
+            color: #dc3545;
+        }
+    </style>
     <?php
     return ob_get_clean();
 }
-
 ?>
 
