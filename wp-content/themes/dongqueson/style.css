@@ -576,3 +576,100 @@
 .footer-section .text-dark {
     color: #fff !important;
 }
+
+/* ============================
+   Highlight Section
+============================ */
+.cta-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.cta-box:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+}
+
+.btn-orange {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #e5673d;
+    color: #fff;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+/* ============================
+   Info Boxes
+============================ */
+.info-box {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box i {
+    color: #ff7f50;
+}
+
+.info-box h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ============================
+   News Section
+============================ */
+.tintuc .card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tintuc .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tintuc .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.tintuc .card-title:hover {
+    color: #007bff;
+}

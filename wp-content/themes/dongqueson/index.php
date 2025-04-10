@@ -8,7 +8,7 @@
         <!-- Popup/Call-to-Action Box -->
         <div class="cta-box text-center bg-white p-4 rounded shadow-sm mb-5">
             <h3 class="mb-4">Hãy để chúng tôi giúp bạn</h3>
-            <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
                 <a href="/doi-ngu-bac-si/" class="btn btn-orange">Tìm bác sĩ</a>
                 <a href="/lien-he/" class="btn btn-green">Đặt lịch khám</a>
                 <a href="/dich-vu/" class="btn btn-orange">Gợi dịch vụ</a>
@@ -17,28 +17,28 @@
 
         <!-- Info Boxes -->
         <div class="row text-center">
-            <div class="col-md-3">
+            <div class="col-6 col-md-3 mb-4">
                 <div class="info-box">
                     <i class="bi bi-award text-orange fs-1 mb-3"></i>
                     <h5>Chất lượng</h5>
                     <p>Quản lý chất lượng bệnh viện tốt</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3 mb-4">
                 <div class="info-box">
                     <i class="bi bi-building text-orange fs-1 mb-3"></i>
                     <h5>Cơ sở</h5>
                     <p>Hiện đại, sạch sẽ, thông mát</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3 mb-4">
                 <div class="info-box">
                     <i class="bi bi-heart-fill text-orange fs-1 mb-3"></i>
                     <h5>Hơn 3.000</h5>
                     <p>Khách hàng đã tới khám chữa bệnh</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3 mb-4">
                 <div class="info-box">
                     <i class="bi bi-hand-thumbs-up text-orange fs-1 mb-3"></i>
                     <h5>>95%</h5>
@@ -52,7 +52,6 @@
 <!-- Service Packages Section -->
 <section class="service-packages py-5">
     <div class="container">
-
         <div class="row">
             <?php echo do_shortcode('[dich_vu_phong_kham]'); ?>
         </div>
