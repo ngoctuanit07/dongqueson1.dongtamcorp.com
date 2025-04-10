@@ -487,13 +487,16 @@
    Footer Styles
 ============================ */
 .footer-section {
-    padding: 2rem 0;
+    background-color: #343a40;
     color: #ffffff;
+    padding: 2rem 0;
 }
 
 .footer-section h5 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .footer-section a {
@@ -509,73 +512,47 @@
     display: inline-block;
     margin-right: 10px;
     color: #ffffff;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-section .social-icons a:hover {
     color: #007bff;
+    transform: scale(1.2);
 }
 
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
-
-.footer-logo {
-    max-width: 80px;
+.footer-section .footer-logo img {
+    max-width: 150px;
     height: auto;
-    display: block;
     margin-bottom: 1rem;
 }
 
-/* ============================
-   General Styles
-============================ */
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.footer-section .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #cccccc;
 }
 
-ul li {
-    margin-bottom: 15px;
+.footer-section iframe {
+    border-radius: 8px;
+    border: none;
 }
 
-.tintuc a {
-    color: #000;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.2s ease;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-section .footer-logo,
+    .footer-section .footer-activity,
+    .footer-section .footer-social {
+        text-align: center;
+    }
+
+    .footer-section .footer-bottom {
+        font-size: 0.8rem;
+    }
 }
 
-.tintuc a:hover {
-    color: #003087;
-}
-
-/* Đảm bảo logo hiển thị đẹp và responsive */
-.custom-logo {
-    max-width: 150px; /* Giới hạn chiều rộng tối đa */
-    height: auto; /* Đảm bảo tỷ lệ khung hình */
-    display: block; /* Đảm bảo logo không bị inline */
-    margin: 0 auto; /* Căn giữa logo */
-}
-
-.custom-logo-link {
-    display: inline-block; /* Đảm bảo liên kết logo không bị ảnh hưởng */
-    max-width: 150px; /* Giới hạn chiều rộng tối đa của liên kết */
-}
-
-.footer-logo {
-    max-width: 80px; /* Giới hạn chiều rộng tối đa */
-    height: auto; /* Giữ tỷ lệ khung hình */
-    display: block; /* Đảm bảo logo không bị inline */
-    margin-bottom: 1rem; /* Khoảng cách dưới logo */
-}
-
-/* ============================
-   Responsive Adjustments
-============================ */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar-nav {
         text-align: center;

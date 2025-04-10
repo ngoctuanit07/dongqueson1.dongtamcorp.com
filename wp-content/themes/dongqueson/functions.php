@@ -8,7 +8,7 @@ function dongqueson_enqueue_scripts() {
     wp_enqueue_style( 'dongqueson-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
     // Thêm Bootstrap Icons
-    wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css', array(), null );
+    wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css', array(), null );
 
     // Tải Bootstrap JS từ CDN
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array( 'jquery' ), null, true );
