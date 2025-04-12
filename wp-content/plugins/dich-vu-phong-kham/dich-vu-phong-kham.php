@@ -510,7 +510,7 @@ function dich_vu_phong_kham_shortcode_display() {
     ?>
 
     <div class="container my-5">
-        <h2 class="section-title text-start mb-4">Gói dịch vụ</h2>
+        <h2 class="section-title text-center mb-4">Gói dịch vụ</h2>
 
         <!-- Tabs -->
         <ul class="nav nav-tabs" id="serviceTabs" role="tablist">

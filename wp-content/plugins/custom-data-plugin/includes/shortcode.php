@@ -17,7 +17,7 @@ function custom_data_shortcode($atts) {
     
     $where = array();
     if ($search) {
-        $where[] = "so_hieu LIKE '%$search%' OR trich_yeu_noi_dung LIKE '%$search%' OR co_quan LIKE '%$search%'";
+        $where[] = "(so_hieu LIKE '%$search%' OR trich_yeu_noi_dung LIKE '%$search%' OR co_quan LIKE '%$search%')";
     }
     if ($filter_co_quan) {
         $where[] = "co_quan = '$filter_co_quan'";
@@ -28,7 +28,8 @@ function custom_data_shortcode($atts) {
         $where_clause = 'WHERE ' . implode(' AND ', $where);
     }
     
-    $results = $wpdb->get_results("SELECT * FROM $table_name $where_clause ORDER BY ngay_ban DESC");
+    // Lấy 5 bản ghi mới nhất
+    $results = $wpdb->get_results("SELECT * FROM $table_name $where_clause ORDER BY ngay_ban DESC LIMIT 5");
     
     if (empty($results)) {
         return '<p>Không có dữ liệu để hiển thị.</p>';

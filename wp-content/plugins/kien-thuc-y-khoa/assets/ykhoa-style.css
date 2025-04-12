@@ -1,0 +1,25 @@
+.ykhoa-swiper {
+    padding: 20px 0;
+}
+.ykhoa-slide {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: left;
+}
+.ykhoa-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.ykhoa-slide h3 {
+    font-size: 16px;
+    color: #e95500;
+    margin-top: 10px;
+}
+.ykhoa-hospital {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}

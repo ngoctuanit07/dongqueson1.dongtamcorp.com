@@ -245,7 +245,7 @@ function doctor_list_shortcode_display() {
     ob_start();
     ?>
     <section class="container py-5">
-        <h2 class="section-title text-center mb-4">Đội ngũ bác sĩ</h2>
+        <h2 class="section-title text-center mb-4">Đội ngũ chuyên môn</h2>
         <div class="row g-4">
             <?php foreach ($doctors as $doctor): ?>
                 <div class="col-md-6 col-lg-3">
