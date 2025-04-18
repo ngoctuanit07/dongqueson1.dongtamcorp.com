@@ -66,6 +66,14 @@
     </div>
 </section>
 
+<section class="service-packages py-5">
+    <div class="container">
+        <div class="row">
+            <?php echo do_shortcode('[kien_thuc_y_khoa]'); ?>
+        </div>
+    </div>
+</section>
+
 <!-- News Section -->
 <section class="container py-4 tintuc">
     <h2 class="section-title text-center mb-4">Tin tức</h2>
