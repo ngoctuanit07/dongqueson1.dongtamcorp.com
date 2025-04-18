@@ -1,0 +1,897 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-0 START @ 03:01:52
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |Linux
+PHP VERSION_________: 8.2.28                                |8.0.30
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 8.0.30 | SAPI: fpm-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: nginx/1.21.4
+DOC ROOT____________: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+REQUEST URL_________: "https://dongqueson.dongtamcorp.com"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[cpnl-dbaction]
+********************************************************************************
+.htaccess file was found in dup-installer folder and it was renamed to avoid interference with installer.
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+INSTALL MODES_______: CLASSIC
+TEMPLATE____________: "base"
+VALIDATE ON START___: "normal"
+PATH_NEW____________: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+URL_NEW_____________: "https://dongqueson.dongtamcorp.com"
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/20250412_phongkhamdongtamsaigon_[HASH]_20250412023024_archive.zip"
+ARCHIVE SIZE________: 92.4MB
+CREATED_____________: 2025-04-12 02:30:24
+WP VERSION__________: 6.7.2
+DUP VERSION_________: 4.5.20.1
+LICENSE_____________: Elite
+PACKAGE COMPONENTS__: Database, Core, Plugins, Themes, Media, Other
+DB VERSION__________: 10.11.11
+DB FILE SIZE________: 2.3MB
+DB TABLES___________: 24
+DB ROWS_____________: 496
+URL HOME____________: https://dongqueson1.dongtamcorp.com
+URL CORE____________: https://dongqueson1.dongtamcorp.com
+URL CONTENT_________: https://dongqueson1.dongtamcorp.com/wp-content
+URL UPLOAD__________: https://dongqueson1.dongtamcorp.com/wp-content/uploads
+URL PLUGINS_________: https://dongqueson1.dongtamcorp.com/wp-content/plugins
+URL MU PLUGINS______: https://dongqueson1.dongtamcorp.com/wp-content/mu-plugins
+URL THEMES__________: https://dongqueson1.dongtamcorp.com/wp-content/themes
+PATH HOME___________: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com
+PATH ABS____________: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com
+PATH WPCONFIG_______: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com
+PATH WPCONTENT______: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com/wp-content
+PATH UPLOADS________: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com/wp-content/uploads
+PATH PLUGINS________: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com/wp-content/plugins
+PATH MUPLUGINS______: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com/wp-content/mu-plugins
+PATH THEMES_________: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "dongqueson1.dongtamcorp.com/"
+
+PLUGINS
+PLUGIN [SLUG:advanced-custom-fields-pro/acf.php                ][ON:true ]  Advanced Custom Fields PRO
+PLUGIN [SLUG:akismet/akismet.php                               ][ON:false]  Akismet Anti-spam: Spam Protection
+PLUGIN [SLUG:bhxh-document-manager/bhxh-document-manager.php   ][ON:true ]  BHXH Document Manager
+PLUGIN [SLUG:classic-editor/classic-editor.php                 ][ON:true ]  Classic Editor
+PLUGIN [SLUG:classic-widgets/classic-widgets.php               ][ON:true ]  Classic Widgets
+PLUGIN [SLUG:contact-form-7/wp-contact-form-7.php              ][ON:true ]  Contact Form 7
+PLUGIN [SLUG:custom-data-plugin/custom-data-plugin.php         ][ON:true ]  Custom Data Plugin
+PLUGIN [SLUG:custom-slider-manager/custom-slider-manager.php   ][ON:true ]  Custom Slider Manager
+PLUGIN [SLUG:doctor-management/doctor-management.php           ][ON:true ]  Doctor Management
+PLUGIN [SLUG:duplicator-pro/duplicator-pro.php                 ][ON:true ]  Duplicator Pro
+PLUGIN [SLUG:dich-vu-phong-kham/dich-vu-phong-kham.php         ][ON:true ]  Dịch Vụ Phòng Khám
+PLUGIN [SLUG:hello.php                                         ][ON:false]  Hello Dolly
+PLUGIN [SLUG:jwt-authentication-for-wp-rest-api/jwt-auth.php   ][ON:true ]  JWT Authentication for WP-API
+PLUGIN [SLUG:kien-thuc-y-khoa/kien-thuc-y-khoa.php             ][ON:true ]  Kiến Thức Y Khoa
+PLUGIN [SLUG:rss-manager/rss-manager.php                       ][ON:true ]  RSS Manager
+
+********************************************************************************
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/ctrls/ctrl.base.php:191][DELTA:   0.08684]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/ctrls/ctrl.base.php:191][DELTA:   0.03010]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Overwrite Install" RESULT: good
+
+START TEST "Disaster Recovery" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Disaster Recovery" RESULT: skip
+
+START TEST "Partial Backup Check" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00044]  MESSAGE:TEST "Partial Backup Check" RESULT: passed
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Subomain multisite installation in subfolder" [CLASS: DUPX_Validation_test_multisite_subfolder]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Subomain multisite installation in subfolder" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+--------------------------------------
+LOG-TIME[DELTA:   0.00890]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00013]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00009]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "Wordpress Configuration" [CLASS: DUPX_Validation_test_wp_config]
+LOG-TIME[DELTA:   0.00115]  MESSAGE:TEST "Wordpress Configuration" RESULT: passed
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Functions and Classes" [CLASS: DUPX_Validation_test_php_functionalities]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Functions and Classes" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.00551]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00007]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Extract only files" [CLASS: DUPX_Validation_test_db_excluded]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Extract only files" RESULT: passed
+
+START TEST "Cpanel connection" [CLASS: DUPX_Validation_test_cpnl_connection]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Cpanel connection" RESULT: skip
+
+START TEST "Create Database User" [CLASS: DUPX_Validation_test_cpnl_new_user]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create Database User" RESULT: skip
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00087]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00204]  MESSAGE:TEST "Database Version" RESULT: passed
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00156]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00069]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00020]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tables_count]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WP Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00105]  MESSAGE:TEST "Multiple WP Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+DB QUERY [ERROR][/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/database/class.db.php:686] MSG: SELECT command denied to user 'dongtamcorp-dongqueson'@'localhost' for table `mysql`.`user`
+	SQL: SELECT max_questions, max_updates, max_connections FROM mysql.user WHERE user = 'dongtamcorp-dongqueson' AND host = 'localhost'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/validation/class.validation.database.service.php[1116]
+TRACE[2] CLASS___: DUPX_Validation_database_service->getUserResources FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/validation/database-tests/class.validation.test.db.user.resources.php[30]
+TRACE[3] CLASS___: DUPX_Validation_test_db_user_resources->runTest FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/validation/class.validation.abstract.item.php[56]
+TRACE[4] CLASS___: DUPX_Validation_abstract_item->test FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/validation/class.validation.manager.php[246]
+TRACE[5] CLASS___: DUPX_Validation_manager->runTests FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/classes/validation/class.validation.manager.php[214]
+TRACE[6] CLASS___: DUPX_Validation_manager->getValidateData FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/ctrls/classes/class.ctrl.ajax.php[186]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/ctrls/classes/class.ctrl.ajax.php[110]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::controller FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/main.installer.php[47]
+
+LOG-TIME[DELTA:   0.00044]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.03650]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00095]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00916]  MESSAGE:TEST "Character Set and Collation Support" RESULT: soft warning
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00013]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00170]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: soft warning
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00016]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+START TEST "User created cleanup" [CLASS: DUPX_Validation_test_db_user_cleanup]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "User created cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+DEFAULT DB_CHARSET [utf8] isn't valid, update DB_CHARSET to utf8mb4 and DB_COLLATE set empty
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+findDupInstallerFolder error; set no subfolder
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 03:02:35
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN"
+HOME URL NEW________: "https://dongqueson.dongtamcorp.com"
+SITE URL NEW________: "https://dongqueson.dongtamcorp.com"
+CONTENT URL NEW_____: "https://dongqueson.dongtamcorp.com/wp-content"
+UPLOAD URL NEW______: "https://dongqueson.dongtamcorp.com/wp-content/uploads"
+PLUGINS URL NEW_____: "https://dongqueson.dongtamcorp.com/wp-content/plugins"
+MUPLUGINS URL NEW___: "https://dongqueson.dongtamcorp.com/wp-content/mu-plugins"
+HOME PATH NEW_______: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+SITE PATH NEW_______: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+CONTENT PATH NEW____: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content"
+UPLOAD PATH NEW_____: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/uploads"
+PLUGINS PATH NEW____: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/plugins"
+MUPLUGINS PATH NEW__: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "ziparchivechunking"
+SET DIR PERMS_______: true
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: true
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "new"
+OTHER CONFIG________: "new"
+FILE TIME___________: "current"
+REMOVE RENDUNDANT___: false
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer"
+	FILE: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/20250412_phongkhamdongtamsaigon_[HASH]_20250412023024_installer-backup.php"
+	FILE: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/20250412_phongkhamdongtamsaigon_[HASH]_20250412023024_archive.zip"
+	FILE: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/installer.php"
+	FILE: "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer-bootlog__fe28cda-12023024.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20250412_phongkhamdongtamsaigon_[HASH]_20250412023024_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP CHUNKING >>> START
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING
+*** RESET CONFIG FILES END
+REMOVE DONOTHING FILES
+LOG-TIME RESET TIME
+REMOVE FILES
+LOG-TIME[DELTA:   0.00030]  MESSAGE:FOLDERS REMOVED
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+FOLDER PREPARE DONE
+ARCHIVE OFFSET 0
+FILE EXTRACTION: done processing last file in list of 14948
+
+EXTRACTION: ZIP CHUNKING >>> DONE
+
+EXTRACTION COMPLETE @ 03:02:38 - RUNTIME: 2.3541 sec. - Files processed: 14,022 of 14,022
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 wp_
+
+
+
+********************************************************************************
+* DUPLICATOR PRO INSTALL-LOG
+* STEP-2 START @ 03:02:38
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "wp_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: ""
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+SQL FILES___________: 1 (980.6KB)
+	1)20250412023024-dump.sql (980.6KB)
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "wp_bhxh_documents"_______________________________[ROWS:       8] [EXTRACT|REPLACE] [INST NAME: wp_bhxh_documents]
+TABLE "wp_clinic_logs"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_clinic_logs]
+TABLE "wp_commentmeta"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_commentmeta]
+TABLE "wp_comments"_____________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_comments]
+TABLE "wp_custom_data"__________________________________[ROWS:      10] [EXTRACT|REPLACE] [INST NAME: wp_custom_data]
+TABLE "wp_custom_sliders"_______________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_custom_sliders]
+TABLE "wp_custom_slider_images"_________________________[ROWS:      12] [EXTRACT|REPLACE] [INST NAME: wp_custom_slider_images]
+TABLE "wp_dich_vu_phong_kham"___________________________[ROWS:      38] [EXTRACT|REPLACE] [INST NAME: wp_dich_vu_phong_kham]
+TABLE "wp_doctors"______________________________________[ROWS:      18] [EXTRACT|REPLACE] [INST NAME: wp_doctors]
+TABLE "wp_doctor_team"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_doctor_team]
+TABLE "wp_duplicator_backups"___________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_duplicator_backups]
+TABLE "wp_duplicator_entities"__________________________[ROWS:       9] [EXTRACT|REPLACE] [INST NAME: wp_duplicator_entities]
+TABLE "wp_kien_thuc_y_khoa_info"________________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_kien_thuc_y_khoa_info]
+TABLE "wp_links"________________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_links]
+TABLE "wp_options"______________________________________[ROWS:     191] [EXTRACT|REPLACE] [INST NAME: wp_options]
+TABLE "wp_postmeta"_____________________________________[ROWS:     116] [EXTRACT|REPLACE] [INST NAME: wp_postmeta]
+TABLE "wp_posts"________________________________________[ROWS:      42] [EXTRACT|REPLACE] [INST NAME: wp_posts]
+TABLE "wp_rss_manager"__________________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: wp_rss_manager]
+TABLE "wp_termmeta"_____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_termmeta]
+TABLE "wp_terms"________________________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: wp_terms]
+TABLE "wp_term_relationships"___________________________[ROWS:      11] [EXTRACT|REPLACE] [INST NAME: wp_term_relationships]
+TABLE "wp_term_taxonomy"________________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: wp_term_taxonomy]
+TABLE "wp_usermeta"_____________________________________[ROWS:      25] [EXTRACT|REPLACE] [INST NAME: wp_usermeta]
+TABLE "wp_users"________________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_users]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.11.11 -- Build Server: 10.11.11
+TIMEOUT:	5000
+MAXPACK:	67108864
+SQLMODE-GLOBAL:	STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+DROP ALL TABLES
+DROP TABLE wp_commentmeta
+DROP TABLE wp_comments
+DROP TABLE wp_links
+DROP TABLE wp_options
+DROP TABLE wp_postmeta
+DROP TABLE wp_posts
+DROP TABLE wp_term_relationships
+DROP TABLE wp_term_taxonomy
+DROP TABLE wp_termmeta
+DROP TABLE wp_terms
+DROP TABLE wp_usermeta
+DROP TABLE wp_users
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`dongtamcorp-dongqueson`@`localhost`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+PROCESSING SQL FILE 20250412023024-dump.sql (1 of 1)
+OFFSET 0 OF 1004139
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+DATABASE CHUNK: CREATION TABLE MARKER FOUND
+Auto Commit set to true successfully
+ALL SQL FILES PROCESSED
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	12
+RENAMED TABLES:	0
+QUERIES RAN:	51
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "wp_bhxh_documents"_______________________________[ROWS:     8]
+TABLE "wp_clinic_logs"__________________________________[ROWS:     0]
+TABLE "wp_commentmeta"__________________________________[ROWS:     0]
+TABLE "wp_comments"_____________________________________[ROWS:     1]
+TABLE "wp_custom_data"__________________________________[ROWS:    10]
+TABLE "wp_custom_slider_images"_________________________[ROWS:    12]
+TABLE "wp_custom_sliders"_______________________________[ROWS:     1]
+TABLE "wp_dich_vu_phong_kham"___________________________[ROWS:    38]
+TABLE "wp_doctor_team"__________________________________[ROWS:     0]
+TABLE "wp_doctors"______________________________________[ROWS:    18]
+TABLE "wp_duplicator_backups"___________________________[ROWS:     1]
+TABLE "wp_duplicator_entities"__________________________[ROWS:     9]
+TABLE "wp_kien_thuc_y_khoa_info"________________________[ROWS:     4]
+TABLE "wp_links"________________________________________[ROWS:     0]
+TABLE "wp_options"______________________________________[ROWS:   191]
+TABLE "wp_postmeta"_____________________________________[ROWS:   116]
+TABLE "wp_posts"________________________________________[ROWS:    42]
+TABLE "wp_rss_manager"__________________________________[ROWS:     5]
+TABLE "wp_term_relationships"___________________________[ROWS:    11]
+TABLE "wp_term_taxonomy"________________________________[ROWS:     5]
+TABLE "wp_termmeta"_____________________________________[ROWS:     0]
+TABLE "wp_terms"________________________________________[ROWS:     5]
+TABLE "wp_usermeta"_____________________________________[ROWS:    25]
+TABLE "wp_users"________________________________________[ROWS:     1]
+
+INSERT DATA RUNTIME: 0.7399 sec.
+STEP-2 COMPLETE @ 03:02:38 - RUNTIME: 0.7399 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+SEARCH ITEM[T:path |P:12] SEARCH: /home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com REPLACE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com [SCOPE: ALL]
+SEARCH ITEM[T:urlnd|P:12] SEARCH: https://dongqueson1.dongtamcorp.com REPLACE: https://dongqueson.dongtamcorp.com [SCOPE: ALL]
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 03:02:39
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 600], [inWpConfig = 1]
+WP_POST_REVISIONS_____: [value = 5], [inWpConfig = 1]
+FORCE_SSL_ADMIN_______: [value = 1], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = ], [inWpConfig = ]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = 1]
+WP_DEBUG_DISPLAY______: [value = ], [inWpConfig = 1]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = 1]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = 1]
+SAVEQUERIES___________: [value = ], [inWpConfig = 1]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 40M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 512M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000000
+throttling____________: 2000
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+CLEAN OPTIONS [wp_options]
+	`option_name` = "duplicator_pro_plugin_data_stats"
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+	`option_name` IN ("duplicator_pro_ui_view_state","duplicator_pro_package_active","duplicator_pro_settings")
+DATABASE OPTIONS DELETED [ROWS:    38]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "wp_bhxh_documents"_______________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_bhxh_documents][0]
+
+EVALUATE TABLE: "wp_clinic_logs"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_comments][0]
+
+EVALUATE TABLE: "wp_custom_data"__________________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_custom_data][0]
+
+EVALUATE TABLE: "wp_custom_sliders"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_custom_sliders][0]
+
+EVALUATE TABLE: "wp_custom_slider_images"_________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_custom_slider_images][0]
+
+EVALUATE TABLE: "wp_dich_vu_phong_kham"___________________________[ROWS:    38][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_dich_vu_phong_kham][0]
+
+EVALUATE TABLE: "wp_doctors"______________________________________[ROWS:    18][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_doctors][0]
+
+EVALUATE TABLE: "wp_doctor_team"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_backups"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_entities"__________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_duplicator_entities][0]
+
+EVALUATE TABLE: "wp_kien_thuc_y_khoa_info"________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_kien_thuc_y_khoa_info][0]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   153][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_options][0]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:   116][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][0]
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:    42][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_posts][0]
+
+EVALUATE TABLE: "wp_rss_manager"__________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_rss_manager][0]
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_terms][0]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    11][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_term_taxonomy][0]
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    25][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_usermeta][0]
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/home/dongtamcorp-dongqueson1/htdocs/dongqueson1.dongtamcorp.com" => "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+	SEARCH[urlnd]  2:"https://dongqueson1.dongtamcorp.com" =============> "https://dongqueson.dongtamcorp.com"
+	CHUNK ACTION: CURRENT [search_replace][wp_users][0]
+--------------------------------------
+SCANNED:	Tables:24 	|	 Rows:453 	|	 Cells:2863 
+UPDATED:	Tables:6 	|	 Rows:76 	|	 Cells:77 
+ERRORS:		0 
+RUNTIME:	0.224100 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [rem_licenze_key][][]
+
+====================================
+REMOVE LICENSE KEY
+====================================
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php
+New .htaccess file created:/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "dirname(__FILE__) . '/'"
+	UPDATE DB_NAME ""dongtamcorp-dongqueson""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE ""
+	WP CONFIG UPDATE AUTOSAVE_INTERVAL "600"
+	WP CONFIG UPDATE WP_POST_REVISIONS "5"
+	WP CONFIG UPDATE WP_DEBUG "false"
+	WP CONFIG UPDATE WP_DEBUG_LOG "false"
+	WP CONFIG REMOVE WP_DISABLE_FATAL_ERROR_HANDLER
+	WP CONFIG UPDATE WP_DEBUG_DISPLAY "false"
+	WP CONFIG UPDATE SCRIPT_DEBUG "false"
+	WP CONFIG UPDATE CONCATENATE_SCRIPTS "false"
+	WP CONFIG UPDATE SAVEQUERIES "false"
+	WP CONFIG UPDATE EMPTY_TRASH_DAYS "21"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+- Preparing .htaccess file with basic setup.
+HTACCESS FILE - Successfully updated the .htaccess file setting.
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "dirname(__FILE__) . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+UPDATE OPTION home ON TABLE wp_options
+UPDATE OPTION siteurl ON TABLE wp_options
+UPDATE OPTION duplicator_pro_exe_safe_mode ON TABLE wp_options
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+ - REMOVED 0 storage items
+ - REMOVED 0 schedule items
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+
+*** SET FOLDER PERMISSION AFTER EXTRACTION
+--------------------------------------
+PATHS MAPPING : "/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com"
+--------------------------------------
+SET FOLDER PERMISSION DONE
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 03:02:39 - RUNTIME: 0.3386 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/src/Core/Bootstrap.php:76] RESET TIME
+STEP ACTION: "on-validate"
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[NOTICE] Warnings or notices on WordPress front-end tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/index.php
+E_WARNING Constant WP_DEBUG_DISPLAY already defined
+	FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[99]
+	--- TRACE ---
+	FUNCTION: define                        FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[99]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-load.php[50]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-blog-header.php[13]
+	FUNCTION: require                       FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/index.php[17]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/wp_test_script_fe28cda-12023024.php[139]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base 
+E_WARNING Constant WP_DEBUG_LOG already defined
+	FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[100]
+	--- TRACE ---
+	FUNCTION: define                        FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[100]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-load.php[50]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-blog-header.php[13]
+	FUNCTION: require                       FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/index.php[17]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/wp_test_script_fe28cda-12023024.php[139]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base 
+
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress backend tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-login.php
+E_WARNING Constant WP_DEBUG_DISPLAY already defined
+	FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[99]
+	--- TRACE ---
+	FUNCTION: define                        FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[99]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-load.php[50]
+	FUNCTION: require                       FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-login.php[12]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/wp_test_script_fe28cda-12023024.php[139]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base 
+E_WARNING Constant WP_DEBUG_LOG already defined
+	FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[100]
+	--- TRACE ---
+	FUNCTION: define                        FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-config.php[100]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-load.php[50]
+	FUNCTION: require                       FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-login.php[12]
+	FUNCTION: require_once                  FILE: /home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/wp-content/wp_test_script_fe28cda-12023024.php[139]
+-----
+For solutions to these issues see the online FAQs 
+https://duplicator.com/knowledge-base 
+
+
+====================================
+LOG-TIME[/home/dongtamcorp-dongqueson/htdocs/dongqueson.dongtamcorp.com/dup-installer/ctrls/ctrl.base.php:191][DELTA:   0.02034]  MESSAGE:END RENDER PAGE

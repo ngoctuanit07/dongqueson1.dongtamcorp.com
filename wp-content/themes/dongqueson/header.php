@@ -42,7 +42,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="tel:02353845900" class="btn btn-outline-primary btn-sm"><i class="bi bi-telephone"></i> 02353 845 900</a>
+                    <a href="tel:02353655666" class="btn btn-outline-primary btn-sm"><i class="bi bi-telephone"></i> 02353.655.666</a>
                 </div>
             </div>
         </div>
@@ -58,11 +58,11 @@
     <header style="background-color: <?php echo esc_attr( $header_bg_color ); ?>;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand text-<?php echo esc_attr( $logo_alignment ); ?>" href="<?php echo home_url(); ?>">
+                <a class="navbar-brand d-flex align-items-center" href="<?php echo home_url(); ?>">
                     <?php if ( $header_logo ) : ?>
-                        <img src="<?php echo esc_url( $header_logo ); ?>" alt="Logo" class="img-fluid" style="max-width: <?php echo esc_attr( $logo_width ); ?>px;">
+                        <img src="<?php echo esc_url( $header_logo ); ?>" alt="Logo" class="img-fluid" style="max-height: 80px; width: auto;">
                     <?php else : ?>
-                        <span class="text-uppercase fw-bold">PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN</span>
+                        <span class="text-uppercase fw-bold fs-4">PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN</span>
                     <?php endif; ?>
                 </a>
 

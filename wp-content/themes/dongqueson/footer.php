@@ -14,11 +14,11 @@ $google_maps_url = ! empty( $options['google_maps_url'] ) ? $options['google_map
         <div class="row">
             <!-- Logo Footer -->
             <div class="col-md-5 footer-logo mb-4 mb-md-0 text-center text-md-start">
-                <?php if ( $footer_logo ) : ?>
-                    <img src="<?php echo esc_url( $footer_logo ); ?>" alt="Footer Logo" class="img-fluid mb-3">
-                <?php else : ?>
+                <?php //if ( $footer_logo ) : ?>
+                    <!-- <img src="<?php //echo esc_url( $footer_logo ); ?>" alt="Footer Logo" class="img-fluid mb-3"> -->
+                <?php //else : ?>
                     <h1 class="text-uppercase fw-bold">PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN</h1>
-                <?php endif; ?>
+                <?php //endif; ?>
                 <p class="small">
                     <?php esc_html_e( 'Chúng tôi luôn sẵn sàng phục vụ bạn với đội ngũ chuyên môn tận tâm và chuyên nghiệp.', 'dongqueson' ); ?>
                 </p>
@@ -38,14 +38,14 @@ $google_maps_url = ! empty( $options['google_maps_url'] ) ? $options['google_map
 
             <!-- Mạng xã hội và Google Maps -->
             <div class="col-md-4 footer-social text-center text-md-start">
-                <h5 class="fw-bold text-uppercase mb-4">Kết nối với chúng tôi</h5>
+                <!-- <h5 class="fw-bold text-uppercase mb-4">Kết nối với chúng tôi</h5>
                 <div class="social-icons mb-4">
-                    <?php foreach ( $social_links as $social ) : ?>
-                        <a href="<?php echo esc_url( $social['social_url'] ); ?>" class="text-white me-3" target="_blank">
-                            <i class="<?php echo esc_attr( $social['social_icon'] ); ?> fs-4"></i>
+                    <?php //foreach ( $social_links as $social ) : ?>
+                        <a href="<?php //echo esc_url( $social['social_url'] ); ?>" class="text-white me-3" target="_blank">
+                            <i class="<?php //echo esc_attr( $social['social_icon'] ); ?> fs-4"></i>
                         </a>
-                    <?php endforeach; ?>
-                </div>
+                    <?php //endforeach; ?>
+                </div> -->
                 <h5 class="fw-bold text-uppercase mb-4">Xem bản đồ</h5>
                 <iframe 
                     src="<?php echo esc_url( $google_maps_url ); ?>" 

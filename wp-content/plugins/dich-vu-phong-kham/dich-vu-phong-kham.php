@@ -582,16 +582,16 @@ function dich_vu_phong_kham_shortcode_display() {
 
     <style>
         .pagination .page-item.active .page-link {
-            background-color: #dc3545;
-            border-color: #dc3545;
-            color: #fff;
+            background-color: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #fff !important;
         }
         .pagination .page-link {
-            color: #dc3545;
+            color: #28a745 !important;
         }
         .pagination .page-link:hover {
-            background-color: #f8d7da;
-            color: #dc3545;
+            background-color: #28a745 !important;
+            color: #fff !important;
         }
     </style>
 

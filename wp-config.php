@@ -21,19 +21,19 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'dongtamcorp-dongqueson1' );
+define( 'DB_NAME', "dongtamcorp-dongqueson" );
 
 /** Database username */
-define( 'DB_USER', 'dongtamcorp-dongqueson1' );
+define( 'DB_USER', "dongtamcorp-dongqueson" );
 
 /** Database password */
-define( 'DB_PASSWORD', 'L74KUN76OZi5PTbF5IXK' );
+define( 'DB_PASSWORD', "lEN7wMMEDv4SDqJQFGki" );
 
 /** Database hostname */
-define( 'DB_HOST', '127.0.0.1:3306' );
+define( 'DB_HOST', "localhost" );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -87,7 +87,6 @@ define( 'WP_DEBUG_LOG', false );
 define( 'WP_DEBUG_DISPLAY', false );
 define( 'SCRIPT_DEBUG', false );
 define( 'SAVEQUERIES', false );
-define( 'WP_DISABLE_FATAL_ERROR_HANDLER', false );
 define( 'WP_ALLOW_REPAIR', false );
 
 
@@ -103,11 +102,12 @@ define( 'CONCATENATE_SCRIPTS', false );
 define( 'AUTOSAVE_INTERVAL', 600 );
 define( 'WP_POST_REVISIONS', 5 );
 define( 'EMPTY_TRASH_DAYS', 21 );
+define( 'DUPLICATOR_AUTH_KEY', 'cksUk+fd+ [pq3Ds6TV^QEGvzrH%KcZ,k&>4 :B]t#[x5Y8`#6YI|?Y ~4imiyN)' );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', dirname(__FILE__) . '/' );
 }
 
 /** Sets up WordPress vars and included files. */

@@ -11,10 +11,10 @@ get_header(); ?>
             <h2 class="text-danger mb-4">Chính sách bảo hiểm y tế</h2>
             <h3 class="text-dark mb-3">Thông tin về chính sách khám chữa bệnh BHYT</h3>
             <p>
-                Bệnh viện Phụ sản - Nhi Quảng Nam không ngừng cải tiến để đáp ứng nhu cầu khám chữa bệnh của các đối tượng có bảo hiểm y tế và bảo lãnh viện phí trực tiếp với nhiều loại hình bảo hiểm khác nhau trong và ngoài nước.
+               Phòng khám Đồng Tâm Sài Gòn không ngừng cải tiến để đáp ứng nhu cầu khám chữa bệnh của các đối tượng có bảo hiểm y tế và bảo lãnh viện phí trực tiếp với nhiều loại hình bảo hiểm khác nhau trong và ngoài nước.
             </p>
             <p>
-                Nếu công ty cung cấp dịch vụ bảo hiểm của Quý khách hàng nằm trong danh sách các công ty hợp tác với Bệnh viện Phụ sản - Nhi Quảng Nam, chúng tôi sẽ liên hệ, chụp nhận thanh toán trực tiếp với công ty bảo hiểm để Quý khách hàng yên tâm hơn khi đến khám chữa bệnh tại Bệnh viện.
+                <strong>Đối tượng áp dụng:</strong> Khách hàng có bảo hiểm y tế, bảo hiểm sức khỏe, bảo hiểm du lịch trong và ngoài nước.
             </p>
             <p>
                 <strong>Chứng từ hướng tới:</strong> Tư tức nguồn gốc, thường xuyên - Thông tin minh bạch, chính xác - Giải đáp nhanh chóng, tư vấn quyen lợi bảo hiểm.
@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="col-md-4">
             <div class="card p-4">
                 <h5 class="text-danger mb-3">Gửi câu hỏi của bạn cho chúng tôi</h5>
-                <p class="text-muted mb-4">Quý khách cần được thông tin hoặc sự trợ giúp, hãy gửi nội dung đến Bệnh viện Phụ sản - Nhi Quảng Nam</p>
+                <p class="text-muted mb-4">Quý khách cần được thông tin hoặc sự trợ giúp, hãy gửi nội dung đến Phòng Khám Đồng Tâm Sài Gòn</p>
                 
                 <!-- Form liên hệ -->
                 <?php echo do_shortcode('[contact-form-7 id="edc5b92" title="Contact form 1"]'); ?>

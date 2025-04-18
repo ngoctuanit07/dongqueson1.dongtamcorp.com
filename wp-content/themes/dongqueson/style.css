@@ -10,6 +10,12 @@
  Text Domain:  dongqueson
  Tags:         bootstrap, responsive, clean
 */
+body {
+    font-family: Arial, sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif !important;
+}
 
 /* ============================
    Top Bar Styles
@@ -743,4 +749,37 @@ h1:hover {
     color: #856404;
     padding: 1.5rem;
     border-radius: 8px;
+}
+.footer-logo h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ============================
+   Logo Styles
+============================ */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa logo và text (nếu có) */
+}
+
+.navbar-brand img {
+    max-height: 80px; /* Giới hạn chiều cao logo */
+    width: auto; /* Đảm bảo tỷ lệ khung hình */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px; /* Bo góc nhẹ cho logo */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng mờ */
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
 }

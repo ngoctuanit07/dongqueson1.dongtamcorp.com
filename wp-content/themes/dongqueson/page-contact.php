@@ -7,13 +7,12 @@ get_header(); ?>
 <div class="container my-5">
     <div class="row">
         <!-- Cột bên trái: Thông tin liên hệ -->
-        <div class="col-md-4">
+        <div class="col-md-8">
             <h2 class="text-danger">LIÊN HỆ</h2>
             <h3 class="text-dark">Phòng Khám Đồng Tâm Sài Gòn</h3>
-            <p><strong>Địa chỉ:</strong> 46 Lý Thường Kiệt, Phường Tân Thạnh, Tam Kỳ, Quảng Nam</p>
-            <p><strong>Điện thoại:</strong> 02353 845 717</p>
-            <p><strong>Cấp cứu:</strong> 02353 845 900</p>
-            <p><strong>Email:</strong> bvphusannhiquangnam@gmail.com</p>
+            <p><strong>Địa chỉ:</strong> Thôn Hương Quế Đông, Quế Phú, Quế Sơn, Quảng Nam, Việt Nam</p>
+            <p><strong>Điện thoại:</strong> 02353.655.666</p>
+            <p><strong>Cấp cứu:</strong> 02353.655.666</p>
             
             <!-- Bản đồ Google Maps -->
             <div class="map-container">
@@ -22,7 +21,7 @@ get_header(); ?>
         </div>
 
         <!-- Cột bên phải: Form liên hệ -->
-        <div class="col-md-8">
+        <div class="col-md-4">
             <div class="card p-4">
                 <p class="text-muted">Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho Phòng Khám Đồng Tâm Sài Gòn, chúng tôi sẽ phản hồi Quý khách trong thời gian sớm nhất.</p>
                 

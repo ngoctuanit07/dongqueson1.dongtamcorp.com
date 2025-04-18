@@ -9,9 +9,9 @@
         <div class="cta-box text-center bg-white p-4 rounded shadow-sm mb-5">
             <h3 class="mb-4">Hãy để chúng tôi giúp bạn</h3>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="/doi-ngu-bac-si/" class="btn btn-orange">Tìm bác sĩ</a>
+                <a href="/doi-ngu-bac-si/" class="btn btn-green">Tìm bác sĩ</a>
                 <a href="/lien-he/" class="btn btn-green">Đặt lịch khám</a>
-                <a href="/dich-vu/" class="btn btn-orange">Gợi dịch vụ</a>
+                <a href="/dich-vu/" class="btn btn-green">Gợi dịch vụ</a>
             </div>
         </div>
 
@@ -61,7 +61,7 @@
 <section class="service-packages py-5">
     <div class="container">
         <div class="row">
-            <?php echo do_shortcode('[kien_thuc_y_khoa]'); ?>
+            <?php echo do_shortcode('[doctor_list]'); ?>
         </div>
     </div>
 </section>
