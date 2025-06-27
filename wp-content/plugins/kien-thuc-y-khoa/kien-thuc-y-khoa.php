@@ -149,6 +149,7 @@ add_shortcode('kien_thuc_y_khoa', function ($atts) {
 
     ob_start();
     if ($query->have_posts()) :
+        echo '<h2 class="ykhoa-title">Thông điệp yêu thương</h2>'; // Thêm tiêu đề
         echo '<div class="swiper ykhoa-swiper"><div class="swiper-wrapper">';
         while ($query->have_posts()) : $query->the_post();
             $info = $wpdb->get_row($wpdb->prepare("SELECT * FROM " . YKHOA_TABLE . " WHERE post_id = %d", get_the_ID()));
@@ -167,7 +168,7 @@ add_shortcode('kien_thuc_y_khoa', function ($atts) {
                 <?php endif; ?>
             </div>
         <?php endwhile;
-        echo '</div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div>';
+        echo '</div></div>'; // Loại bỏ các nút prev và next
     endif;
     wp_reset_postdata();
     return ob_get_clean();

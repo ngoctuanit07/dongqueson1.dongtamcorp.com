@@ -19,6 +19,21 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: <?php echo esc_attr( $heading_font_family ); ?>;
         }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        .search-form .search-input {
+            padding-right: 2.5rem;
+        }
+        @media (max-width: 767.98px) {
+            .top-bar .row > div {
+                text-align: center !important;
+            }
+            .search-form {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 <body <?php body_class(); ?>>
@@ -35,13 +50,13 @@
     <?php if ( $show_top_bar ) : ?>
     <div class="top-bar py-2" style="background-color: <?php echo esc_attr( $top_bar_bg_color ); ?>; color: <?php echo esc_attr( $top_bar_text_color ); ?>;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
+            <div class="row align-items-center gy-2">
+                <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
                     <ul class="top-bar-links list-inline mb-0">
                         <li class="list-inline-item"><?php echo wp_kses_post( $top_bar_content ); ?></li>
                     </ul>
                 </div>
-                <div class="col-md-6 text-end">
+                <div class="col-12 col-md-6 text-center text-md-end">
                     <a href="tel:02353655666" class="btn btn-outline-primary btn-sm"><i class="bi bi-telephone"></i> 02353.655.666</a>
                 </div>
             </div>
@@ -83,9 +98,8 @@
                         ));
                         ?>
                     </div>
-
                     <!-- Search Form -->
-                    <form class="search-form d-flex ms-auto position-relative" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <form class="search-form d-flex ms-auto mt-3 mt-lg-0 position-relative w-100 w-lg-auto" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <input class="form-control search-input" type="search" name="s" placeholder="Tìm kiếm..." aria-label="Search">
                         <span class="search-icon position-absolute end-0 top-50 translate-middle-y pe-3">
                             <i class="bi bi-search"></i>
@@ -95,4 +109,4 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-4">
+    <div class="container mt-3 mt-md-4">

@@ -15,11 +15,18 @@
 }
 .ykhoa-slide h3 {
     font-size: 16px;
-    color: #e95500;
-    margin-top: 10px;
+    color: #333;
+    margin: 10px 0;
+
 }
 .ykhoa-hospital {
     margin-top: 10px;
     font-size: 14px;
     color: #444;
+}
+.ykhoa-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }

@@ -1,10 +1,12 @@
 <?php get_header(); ?>
+<div class="container py-4">
     <div class="row">
-        <div class="col-md-8">
+        <!-- Nội dung chính -->
+        <div class="col-12 col-md-8 mb-4">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article class="card mb-4">
+                <article class="card h-100 mb-4">
                     <div class="card-body">
-                        <h1 class="card-title"><?php the_title(); ?></h1>
+                        <h1 class="card-title h4 mb-3"><?php the_title(); ?></h1>
                         <div class="entry-content">
                             <?php the_content(); ?>
                         </div>
@@ -12,8 +14,10 @@
                 </article>
             <?php endwhile; endif; ?>
         </div>
-        <div class="col-md-4">
+        <!-- Sidebar -->
+        <div class="col-12 col-md-4">
             <?php get_sidebar(); ?>
         </div>
     </div>
+</div>
 <?php get_footer(); ?>

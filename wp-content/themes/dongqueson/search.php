@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container mt-4">
+<div class="container py-4">
     <h1 class="mb-4">
         <?php printf( esc_html__( 'Kết quả tìm kiếm cho: %s', 'dongqueson' ), '<span>' . get_search_query() . '</span>' ); ?>
     </h1>
@@ -8,7 +8,7 @@
     <?php if ( have_posts() ) : ?>
         <div class="row">
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="col-md-4 mb-4">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
                     <div class="card h-100">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <a href="<?php the_permalink(); ?>">
@@ -16,7 +16,7 @@
                             </a>
                         <?php endif; ?>
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <h5 class="card-title mb-2">
                                 <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                                     <?php the_title(); ?>
                                 </a>
@@ -34,7 +34,7 @@
         </div>
 
         <!-- Pagination -->
-        <div class="pagination">
+        <div class="pagination d-flex justify-content-center mt-3">
             <?php
             the_posts_pagination( array(
                 'mid_size'  => 2,

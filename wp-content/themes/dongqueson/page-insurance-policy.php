@@ -4,11 +4,11 @@
  */
 get_header(); ?>
 
-<div class="container my-5">
-    <div class="row">
+<div class="container py-4 py-md-5">
+    <div class="row gy-4">
         <!-- Cột bên trái: Thông tin chính sách bảo hiểm y tế -->
-        <div class="col-md-8">
-            <h2 class="text-danger mb-4">Chính sách bảo hiểm y tế</h2>
+        <div class="col-12 col-md-8">
+            <h2 class="text-danger mb-3 mb-md-4">Chính sách bảo hiểm y tế</h2>
             <h3 class="text-dark mb-3">Thông tin về chính sách khám chữa bệnh BHYT</h3>
             <p>
                Phòng khám Đồng Tâm Sài Gòn không ngừng cải tiến để đáp ứng nhu cầu khám chữa bệnh của các đối tượng có bảo hiểm y tế và bảo lãnh viện phí trực tiếp với nhiều loại hình bảo hiểm khác nhau trong và ngoài nước.
@@ -17,15 +17,15 @@ get_header(); ?>
                 <strong>Đối tượng áp dụng:</strong> Khách hàng có bảo hiểm y tế, bảo hiểm sức khỏe, bảo hiểm du lịch trong và ngoài nước.
             </p>
             <p>
-                <strong>Chứng từ hướng tới:</strong> Tư tức nguồn gốc, thường xuyên - Thông tin minh bạch, chính xác - Giải đáp nhanh chóng, tư vấn quyen lợi bảo hiểm.
+                <strong>Chứng từ hướng tới:</strong> Tư tức nguồn gốc, thường xuyên - Thông tin minh bạch, chính xác - Giải đáp nhanh chóng, tư vấn quyền lợi bảo hiểm.
             </p>
         </div>
 
         <!-- Cột bên phải: Form gửi câu hỏi -->
-        <div class="col-md-4">
-            <div class="card p-4">
-                <h5 class="text-danger mb-3">Gửi câu hỏi của bạn cho chúng tôi</h5>
-                <p class="text-muted mb-4">Quý khách cần được thông tin hoặc sự trợ giúp, hãy gửi nội dung đến Phòng Khám Đồng Tâm Sài Gòn</p>
+        <div class="col-12 col-md-4">
+            <div class="card p-3 p-md-4">
+                <h5 class="text-danger mb-2 mb-md-3">Gửi câu hỏi của bạn cho chúng tôi</h5>
+                <p class="text-muted mb-3 mb-md-4">Quý khách cần được thông tin hoặc sự trợ giúp, hãy gửi nội dung đến Phòng Khám Đồng Tâm Sài Gòn</p>
                 
                 <!-- Form liên hệ -->
                 <?php echo do_shortcode('[contact-form-7 id="edc5b92" title="Contact form 1"]'); ?>

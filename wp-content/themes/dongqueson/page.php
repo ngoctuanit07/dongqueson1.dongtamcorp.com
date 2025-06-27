@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div class="container py-5">
+<div class="container py-4">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-12 col-md-11 col-lg-10">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="mb-5">
                     <!-- Tiêu đề bài viết -->
-                    <h1 class="text-center mb-4 fw-bold"><?php the_title(); ?></h1>
+                    <h1 class="text-center mb-4 fw-bold h3 h1-md"><?php the_title(); ?></h1>
                     
                     <!-- Nội dung bài viết -->
                     <div class="entry-content">

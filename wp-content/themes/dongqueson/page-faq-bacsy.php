@@ -4,11 +4,11 @@
  */
 get_header(); ?>
 
-<div class="container my-5">
-    <h2 class="text-danger mb-4">Hỏi đáp bác sĩ</h2>
-    <div class="row">
+<div class="container py-4 py-md-5">
+    <h2 class="text-danger mb-4 text-center text-md-start">Hỏi đáp bác sĩ</h2>
+    <div class="row gy-4">
         <!-- Cột bên trái: Accordion với các câu hỏi -->
-        <div class="col-md-8">
+        <div class="col-12 col-md-8">
             <div class="accordion" id="faqAccordion">
                 <!-- Câu hỏi 1 -->
                 <div class="accordion-item">
@@ -42,7 +42,7 @@ get_header(); ?>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Lợi ích phẩm não mà tơi nên tránh?
+                            Lợi ích phẩm não mà tôi nên tránh?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
@@ -56,7 +56,7 @@ get_header(); ?>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Làm thế nào tơi có thể chuẩn bị cho lần đầu làm mẹ?
+                            Làm thế nào tôi có thể chuẩn bị cho lần đầu làm mẹ?
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
@@ -69,10 +69,10 @@ get_header(); ?>
         </div>
 
         <!-- Cột bên phải: Danh sách liên kết -->
-        <div class="col-md-4">
-            <div class="card p-4">
+        <div class="col-12 col-md-4">
+            <div class="card p-3 p-md-4">
                 <h5 class="faq-help-title mb-3">Chúng tôi có thể giúp gì cho bạn?</h5>
-                <ul class="list-unstyled faq-help-list">
+                <ul class="list-unstyled faq-help-list mb-0">
                     <li><a href="#" class="faq-help-link">Tư vấn ngay</a></li>
                     <li><a href="#" class="faq-help-link">Tìm bác sĩ</a></li>
                     <li><a href="#" class="faq-help-link">Tìm chuyên khoa</a></li>
@@ -114,36 +114,14 @@ get_header(); ?>
     }
     .faq-help-list li {
         margin-bottom: 10px;
-    }
-    .faq-help-link {
-        color: #007bff;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 400;
-        transition: text-decoration 0.2s ease;
-    }
-    .faq-help-link:hover {
-        text-decoration: underline;
-    }
-    .faq-help-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #333;
-    }
-    .faq-help-list {
-        margin: 0;
-        padding: 0;
-    }
-    .faq-help-list li {
-        margin-bottom: 10px;
         position: relative;
-        padding-left: 20px; /* Tạo khoảng cách cho biểu tượng mũi tên */
+        padding-left: 20px;
     }
     .faq-help-list li::before {
         content: ">";
         position: absolute;
         left: 0;
-        color: #f28c38; /* Màu cam giống trong hình */
+        color: #f28c38;
         font-size: 1rem;
         font-weight: 700;
         line-height: 1.5;
@@ -157,11 +135,6 @@ get_header(); ?>
     }
     .faq-help-link:hover {
         text-decoration: underline;
-    }
-    .card {
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        border: none;
     }
 </style>
 <?php get_footer(); ?>
