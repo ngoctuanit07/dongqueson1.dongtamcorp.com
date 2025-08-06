@@ -7,9 +7,9 @@
     <?php wp_head(); ?>
     <?php
     $options = get_option( 'dongqueson_theme_options' );
-    $body_font_family = ! empty( $options['body_font_family']['family'] ) ? $options['body_font_family']['family'] : 'Arial, sans-serif';
+    $body_font_family = ! empty( $options['body_font_family']['family'] ) ? $options['body_font_family']['family'] : "'Times New Roman', Times, serif";
     $body_font_size = ! empty( $options['body_font_size'] ) ? $options['body_font_size'] : 16;
-    $heading_font_family = ! empty( $options['heading_font_family']['family'] ) ? $options['heading_font_family']['family'] : 'Georgia, serif';
+    $heading_font_family = ! empty( $options['heading_font_family']['family'] ) ? $options['heading_font_family']['family'] : "'Times New Roman', Times, serif";
     ?>
     <style>
         body {
