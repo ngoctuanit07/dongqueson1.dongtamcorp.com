@@ -11,10 +11,10 @@
  Tags:         bootstrap, responsive, clean
 */
 body {
-    font-family: Arial, sans-serif !important;
+    font-family: 'Times New Roman', Times, serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, sans-serif !important;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* ============================
@@ -357,12 +357,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
-.contact-icons .text-success {
-    color: #28a745 !important;
+contact-icons .text-success {
+    color: #28a745;
 }
 
-.contact-icons .text-primary {
-    color: #007bff !important;
+contact-icons .text-primary {
+    color: #007bff;
 }
 
 /* Messages Section */
@@ -580,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 .footer-section .text-dark {
-    color: #fff !important;
+    color: #fff;
 }
 
 /* ============================
@@ -716,7 +716,7 @@ li {
 }
 .text-danger {
     --bs-text-opacity: 1;
-    color: #333 !important;
+    color: #333;
 }
 
 /* ============================

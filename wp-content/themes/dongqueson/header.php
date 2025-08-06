@@ -99,8 +99,8 @@
                         ?>
                     </div>
                     <!-- Search Form -->
-                    <form class="search-form d-flex ms-auto mt-3 mt-lg-0 position-relative w-100 w-lg-auto" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <input class="form-control search-input" type="search" name="s" placeholder="Tìm kiếm..." aria-label="Search">
+                    <form class="search-form d-flex flex-column flex-lg-row ms-auto mt-3 mt-lg-0 position-relative w-100 w-lg-auto mb-2 mb-lg-0" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <input class="form-control search-input w-100 w-lg-auto" type="search" name="s" placeholder="Tìm kiếm..." aria-label="Search">
                         <span class="search-icon position-absolute end-0 top-50 translate-middle-y pe-3">
                             <i class="bi bi-search"></i>
                         </span>

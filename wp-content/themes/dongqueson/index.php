@@ -16,29 +16,29 @@
         </div>
 
         <!-- Info Boxes -->
-        <div class="row text-center">
-            <div class="col-6 col-md-3 mb-4">
+        <div class="row row-cols-2 row-cols-md-4 text-center gy-3 gy-md-4">
+            <div class="col mb-4">
                 <div class="info-box">
                     <i class="bi bi-award text-orange fs-1 mb-2 mb-md-3"></i>
                     <h5>Chất lượng</h5>
                     <p class="mb-0">Quản lý chất lượng bệnh viện tốt</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-4">
+            <div class="col mb-4">
                 <div class="info-box">
                     <i class="bi bi-building text-orange fs-1 mb-2 mb-md-3"></i>
                     <h5>Cơ sở</h5>
                     <p class="mb-0">Hiện đại, sạch sẽ, thông mát</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-4">
+            <div class="col mb-4">
                 <div class="info-box">
                     <i class="bi bi-heart-fill text-orange fs-1 mb-2 mb-md-3"></i>
                     <h5>Hơn 3.000</h5>
                     <p class="mb-0">Khách hàng đã tới khám chữa bệnh</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-4">
+            <div class="col mb-4">
                 <div class="info-box">
                     <i class="bi bi-hand-thumbs-up text-orange fs-1 mb-2 mb-md-3"></i>
                     <h5>&gt;95%</h5>
@@ -53,7 +53,7 @@
 <section class="service-packages py-4 py-md-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-4">Các gói dịch vụ</h2>
-        <div class="row">
+        <div class="row gy-4">
             <?php echo do_shortcode('[dich_vu_phong_kham]'); ?>
         </div>
     </div>
@@ -63,7 +63,7 @@
 <section class="service-packages py-4 py-md-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-4">Đội ngũ bác sĩ</h2>
-        <div class="row">
+        <div class="row gy-4">
             <?php echo do_shortcode('[doctor_list]'); ?>
         </div>
     </div>
@@ -73,7 +73,7 @@
 <section class="service-packages py-4 py-md-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-4">Kiến thức y khoa</h2>
-        <div class="row">
+        <div class="row gy-4">
             <?php echo do_shortcode('[kien_thuc_y_khoa]'); ?>
         </div>
     </div>
@@ -82,7 +82,7 @@
 <!-- News Section -->
 <section class="container py-4 tintuc">
     <h2 class="section-title text-center mb-4">Tin tức</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="row row-cols-1 row-cols-md-3 gy-3 gx-3">
         <!-- Tin Y Tế -->
         <div class="col">
             <div class="card border-0 h-100">

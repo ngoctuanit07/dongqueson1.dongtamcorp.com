@@ -10,7 +10,7 @@ get_header(); ?>
         <h1 class="text-center mb-4 fw-bold h3 h1-md">
             <?php the_title(); ?>
         </h1>
-        <div class="row">
+        <div class="row gy-4">
             <!-- Sử dụng shortcode để hiển thị danh sách bác sĩ -->
             <?php echo do_shortcode('[doctor_list]'); ?>
         </div>

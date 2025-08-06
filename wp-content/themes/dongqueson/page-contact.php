@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="container py-4 py-md-5">
     <div class="row gy-4">
         <!-- Cột bên trái: Thông tin liên hệ -->
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 mb-3 mb-md-0">
             <h2 class="text-danger mb-3 mb-md-4">LIÊN HỆ</h2>
             <h3 class="text-dark mb-3">Phòng Khám Đồng Tâm Sài Gòn</h3>
             <p><strong>Địa chỉ:</strong> Thôn Hương Quế Đông, Quế Phú, Quế Sơn, Quảng Nam, Việt Nam</p>
@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
 
         <!-- Cột bên phải: Form liên hệ -->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
             <div class="card p-3 p-md-4">
                 <p class="text-muted mb-3">Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho Phòng Khám Đồng Tâm Sài Gòn, chúng tôi sẽ phản hồi Quý khách trong thời gian sớm nhất.</p>
                 

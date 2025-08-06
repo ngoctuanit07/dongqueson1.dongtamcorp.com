@@ -13,7 +13,7 @@ get_header(); ?>
         </h1>
 
         <!-- Grid hiển thị các gói dịch vụ -->
-        <div class="row">
+        <div class="row gy-4">
             <?php echo do_shortcode('[dich_vu_phong_kham]'); ?>
         </div>
     </div>

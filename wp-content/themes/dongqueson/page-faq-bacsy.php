@@ -8,7 +8,7 @@ get_header(); ?>
     <h2 class="text-danger mb-4 text-center text-md-start">Hỏi đáp bác sĩ</h2>
     <div class="row gy-4">
         <!-- Cột bên trái: Accordion với các câu hỏi -->
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 mb-3 mb-md-0">
             <div class="accordion" id="faqAccordion">
                 <!-- Câu hỏi 1 -->
                 <div class="accordion-item">
@@ -69,7 +69,7 @@ get_header(); ?>
         </div>
 
         <!-- Cột bên phải: Danh sách liên kết -->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
             <div class="card p-3 p-md-4">
                 <h5 class="faq-help-title mb-3">Chúng tôi có thể giúp gì cho bạn?</h5>
                 <ul class="list-unstyled faq-help-list mb-0">

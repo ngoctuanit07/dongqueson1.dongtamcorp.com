@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="container py-4 py-md-5">
     <div class="row gy-4">
         <!-- Cột bên trái: Thông tin chính sách bảo hiểm y tế -->
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 mb-3 mb-md-0">
             <h2 class="text-danger mb-3 mb-md-4">Chính sách bảo hiểm y tế</h2>
             <h3 class="text-dark mb-3">Thông tin về chính sách khám chữa bệnh BHYT</h3>
             <p>
@@ -22,7 +22,7 @@ get_header(); ?>
         </div>
 
         <!-- Cột bên phải: Form gửi câu hỏi -->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
             <div class="card p-3 p-md-4">
                 <h5 class="text-danger mb-2 mb-md-3">Gửi câu hỏi của bạn cho chúng tôi</h5>
                 <p class="text-muted mb-3 mb-md-4">Quý khách cần được thông tin hoặc sự trợ giúp, hãy gửi nội dung đến Phòng Khám Đồng Tâm Sài Gòn</p>

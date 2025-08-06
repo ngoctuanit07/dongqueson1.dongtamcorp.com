@@ -14,7 +14,7 @@ get_header(); ?>
         </p>
 
         <!-- Messages Cards -->
-        <div class="row">
+        <div class="row gy-4">
             <div class="col-12 col-md-6 mb-4">
                 <div class="card message-card h-100 border-0 shadow-sm">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/message1.jpg" alt="Message 1" class="card-img-top">
