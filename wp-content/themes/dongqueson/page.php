@@ -6,7 +6,7 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="mb-5">
                     <!-- Tiêu đề bài viết -->
-                    <h1 class="text-center mb-4 fw-bold h3 h1-md"><?php the_title(); ?></h1>
+                    <!-- <h1 class="text-center mb-4 fw-bold h3 h1-md"><?php //the_title(); ?></h1> -->
                     
                     <!-- Nội dung bài viết -->
                     <div class="entry-content">
