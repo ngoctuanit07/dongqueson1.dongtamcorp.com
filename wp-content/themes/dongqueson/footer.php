@@ -11,21 +11,17 @@ $google_maps_url = ! empty( $options['google_maps_url'] ) ? $options['google_map
 ?>
 <footer class="footer-section text-white" style="background-color: <?php echo esc_attr( $footer_bg_color ); ?>;">
     <div class="container py-4 py-md-5">
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-stretch">
             <!-- Logo Footer -->
-            <div class="col-12 col-md-5 footer-logo text-center text-md-start">
-                <?php if ( $footer_logo ) : ?>
-                    <img src="<?php echo esc_url( $footer_logo ); ?>" alt="Footer Logo" class="img-fluid mb-3" style="max-width:180px;">
-                <?php else : ?>
-                    <h1 class="text-uppercase fw-bold fs-5 fs-md-4">PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN</h1>
-                <?php endif; ?>
-                <p class="small mb-0" style="color: <?php echo esc_attr($footer_text_color); ?>">
+            <div class="col-12 col-md-4 footer-logo d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start h-100">
+                <h1 class="text-uppercase fw-bold fs-5 fs-md-4 mb-3">PHÒNG KHÁM ĐỒNG TÂM SÀI GÒN</h1>
+                <p class="small mb-0" style="color: <?php echo esc_attr($footer_text_color); ?>; max-width: 320px;">
                     <?php esc_html_e( 'Chúng tôi luôn sẵn sàng phục vụ bạn với đội ngũ chuyên môn tận tâm và chuyên nghiệp.', 'dongqueson' ); ?>
                 </p>
             </div>
 
             <!-- Hoạt động -->
-            <div class="col-12 col-md-3 footer-activity">
+            <div class="col-12 col-md-3 footer-activity h-100 d-flex flex-column justify-content-center">
                 <h5 class="fw-bold text-uppercase mb-3">Hoạt động</h5>
                 <ul class="list-unstyled mb-0">
                     <li><a href="#" class="text-decoration-none text-white-50"><i class="bi bi-chevron-right me-2"></i>Thông tin Phòng Khám</a></li>
@@ -37,7 +33,7 @@ $google_maps_url = ! empty( $options['google_maps_url'] ) ? $options['google_map
             </div>
 
             <!-- Mạng xã hội và Google Maps -->
-            <div class="col-12 col-md-4 footer-social text-center text-md-start">
+            <div class="col-12 col-md-4 footer-social text-center text-md-start h-100 d-flex flex-column justify-content-center">
                 <h5 class="fw-bold text-uppercase mb-3">Xem bản đồ</h5>
                 <iframe 
                     src="<?php echo esc_url( $google_maps_url ); ?>" 

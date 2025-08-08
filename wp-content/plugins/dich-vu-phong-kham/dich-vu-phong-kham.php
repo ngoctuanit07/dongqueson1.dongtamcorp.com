@@ -531,7 +531,7 @@ function dich_vu_phong_kham_shortcode_display() {
                         <?php foreach ($services as $sv): ?>
                             <div class="col-md-6 col-lg-3">
                                 <div class="card h-100 shadow-sm">
-                                    <img src="https://demo.dongtamcorp.com/wp-content/uploads/2024/12/logo-dong-tam-corp-2024-02-800x800.png" class="card-img-top" alt="<?php echo esc_attr($sv['name']); ?>">
+                                    <img src="/wp-content/uploads/2025/05/Asset-18300.jpg" class="card-img-top" alt="<?php echo esc_attr($sv['name']); ?>">
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo esc_html($sv['name']); ?></h5>
                                         <p class="text-danger fw-bold">Liên hệ báo giá</p>
